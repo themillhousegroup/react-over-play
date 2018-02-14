@@ -6,7 +6,7 @@ import javax.inject.Inject
 import java.io.File
 import play.api.libs.json.Json
 
-class FrontEndServingController @Inject() (private val assets: Assets) extends Controller {
+class FrontEndServingController @Inject() (private val assets: controllers.Assets) extends Controller {
 
   private val logger = Logger("FrontEndServingController")
 

@@ -7,9 +7,10 @@ scalaVersion := "2.11.7"
 
 organization := "com.themillhousegroup"
 
+val playVersion = "2.5.18"
+
 libraryDependencies ++= Seq(
-    "ch.qos.logback"              %   "logback-classic"       % "1.1.5",
-    "com.typesafe.scala-logging"  %%  "scala-logging"         % "3.1.0",
+		"com.typesafe.play"  					%%  "play"             % playVersion 		% "provided",
     "org.mockito"                 %   "mockito-all"           % "1.10.19"       % "test",
     "org.specs2"                  %%  "specs2"                % "2.3.13"      % "test"
 )
